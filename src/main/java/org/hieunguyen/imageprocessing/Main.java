@@ -9,9 +9,9 @@ import javax.imageio.ImageIO;
 
 public class Main {
     private static final String INPUT_IMAGE = "/Users/hieunguyen/Documents/Working/Repo/Java_Multithreading_Concurrency_Performance_Optimization/src/main"
-        + "/resources/many-flowers.jpg";
+        + "/resources/imageprocessing/many-flowers.jpg";
     private static final String OUTPUT_IMAGE = "/Users/hieunguyen/Documents/Working/Repo/Java_Multithreading_Concurrency_Performance_Optimization/src/main"
-        + "/resources/recolor-many-flowers.jpg";
+        + "/resources/imageprocessing/recolor-many-flowers.jpg";
     private static final int NUM_WORKER = 10;
 
 
