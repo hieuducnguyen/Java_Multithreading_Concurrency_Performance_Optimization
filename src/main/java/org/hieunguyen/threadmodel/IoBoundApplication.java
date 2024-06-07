@@ -4,8 +4,8 @@ import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class IOBoundApplication {
-    private static final int NUMBER_OF_TASK = 1_000;
+public class IoBoundApplication {
+    private static final int NUMBER_OF_TASK = 10_000;
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
@@ -18,6 +18,7 @@ public class IOBoundApplication {
     }
 
     private static void performTask() {
+//        try (ExecutorService executorService = Executors.newVirtualThreadPerTaskExecutor()) {
         try (ExecutorService executorService = Executors.newCachedThreadPool()) {
 
             for (int i = 0; i < NUMBER_OF_TASK; i++) {
